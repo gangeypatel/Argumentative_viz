@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Argumentative viz</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" /> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script><!-- end of the container div -->
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+
+<body>
+    <div id="maindiv">
+        <div class="row" id="title">
+            <h2 class="text-center">Argumentative viz</h2>
+            <h3 class="text-center">Gangey Patel</h3>
+        </div>
+
+        <div class="description">
+            <p>The data is about Jobs Survey in <u style="color:brown">Private sector and Government jobs in
+                    india</u>. There are 3 catagories being Technical, Non-technical and arts.</p>
+            <p><b>The link to dataset:</b><a href=https://www.kaggle.com/datasets/tejashvi14/job-survey-india> Jobs dataset on
+                    kaggle</a></p>
+            <p> The following visualization is an argumentative visualization that aims to answer the following
+                question: </p>
+            <p><u><b> Should a candidate aim for jobs available in private sector or government sector?</b></u></p>
+            <p>In my opinion, Private Sector jobs are more beneficial for candidates for several reasons</p>
+            <hr>
+            <div id="chkbx" style="display:flex; justify-content: center;">
+                <!-- <input type="checkbox" id="checkbox" onchange="isChecked()"
+                    style="margin: 5px 10px 15px 10px;"><span class="slider"></span> -->
+                <label for="checkbox" style="margin: 10px 10px 20px 20px;">Catagory</label>
+                <label class="switch" style="margin: 5px 10px 20px 20px;">
+                    <input type="checkbox" id="checkbox" onchange="isChecked()">
+                    <span class="slider"></span>
+                  </label>
+                  <label for="checkbox" style="margin: 10px 10px 20px 20px;">Salary Range</label>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="maindiv-viz">
+            <div class="column1" id="viz1">
+                <span>Private Sector Jobs</span>
+                <svg id="svg1"></svg>
+                <div class="column" id="story1">
+                    <p>
+                        Ram just completed his studies and is now thinking about getting A job. He is confused whether
+                        he should go for a private sector job or a government sector job.
+                        He is looking for a job in <u style="color:brown">the technical field.</u> He is also interested
+                        in arts and non-technical jobs. He is looking for a job that will provide him with a good salary
+                        and a good work-life balance.
+                        After looking at the data of Private sector jobs, he found that there are more jobs available in
+                        the technical field and most of them are getting <u style="color:brown">salary over 1500K
+                            annually.</u>
+                        So he can provide a better life for his family.
+                        There is also good work-life balance in Private Sector jobs, as he has to work only <u
+                            style="color:brown">4 days a week.</u>
+                        Private sector jobs also tend to offer greater flexibility in terms of career growth, allowing
+                        individuals to progress and specialize in their preferred areas, and adapt to changing industry
+                        trends.
+                        One other advantage of private sector jobs is that corporates supports their employees based on their performance. So it is more easy to climb the corporate ladder and getting promoted in Private Sector jobs.
+                         Whereas in the Government Sector jobs, it is more difficult to get promoted.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="column2" id="viz2">
+                <span>Government Sector Jobs</span>
+                <svg id="svg2"></svg>
+                <div class="column" id="story2">
+                    <p>Looking at the government jobs visualization, Ram realized that government jobs can offer a
+                        multitude of advantages over private sector jobs.
+                        Firstly, government jobs often provide job security and stability, which can be appealing to
+                        individuals seeking long-term employment.
+                        The major chunk of people are getting paid somewhere <u style="color:brown">between
+                            900-1200K</u> which is definately less than the private sector jobs.
+                        More than that, Government employees work somewhere between <u style="color:brown">5-6 days a
+                            week</u> which is more than the private sector but the <u style="color:brown">job
+                            security</u> is more.
+                        This stability can offer peace of mind and a sense of security for employees, allowing them to
+                        plan for the future and have a reliable source of income.
+                        <u>There is also an conception in india that fathers tend to choose their son-in-law who is in
+                            government job as they have a good job security and a good pension plan.</u>
+                        Ram found out that government jobs can offer attractive benefits packages, including health
+                        insurance, retirement plans, and paid time off, which may be more comprehensive compared to
+                        private sector jobs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
